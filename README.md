@@ -2,14 +2,14 @@
 
 ## Grupo, nombre y legajo de integrantes
 
-- Nombre del grupo: **Completar**
+- Nombre del grupo: NA
 
 Integrantes:
-- Legajo: **Completar** 
-- Nombre: **Completar**
+- Legajo: 222.323-5
+- Nombre: Agustín Fulco
 
-- Legajo: **Completar** 
-- Nombre: **Completar**
+- Legajo: 214.079-2
+- Nombre: Nicolas Mariano Rojas
 
 
 ## Objetivos

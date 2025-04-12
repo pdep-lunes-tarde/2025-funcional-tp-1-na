@@ -4,40 +4,43 @@ import PdePreludat
 -- 1. Numeros
 
 siguiente :: Number -> Number
-siguiente = implementame
+siguiente num = num + 1
 
 esPositivo :: Number -> Bool
-esPositivo = implementame
+esPositivo num = num > 0
 
 -- escriban el tipo de esta función
-inversa n = implementame
+inversa :: Number -> Number
+inversa n = 1/n
 
 -- 2. Temperaturas
 
 celsiusAFahrenheit :: Number -> Number
-celsiusAFahrenheit celsius = implementame
+celsiusAFahrenheit celsius = celsius * 1.8 + 32
 
 fahrenheitACelsius :: Number -> Number
-fahrenheitACelsius fahrenheit = implementame
+fahrenheitACelsius fahrenheit = (fahrenheit - 32) / 1.8
 
 -- escriban el tipo de esta función
-haceFrioCelsius grados = implementame
+haceFrioCelsius :: Number -> Bool
+haceFrioCelsius gradosCelsius = gradosCelsius <= 8
 
 -- escriban el tipo de esta función
-haceFrioFahrenheit grados = implementame
+haceFrioFahrenheit :: Number -> Bool
+haceFrioFahrenheit gradosFahrenheit = haceFrioCelsius(fahrenheitACelsius gradosFahrenheit)
 
 -- 2.5 Bonus OPCIONAL
 perimetroCirculo :: Number -> Number
-perimetroCirculo radio = implementame
+perimetroCirculo radio = 2 * 3.14 * radio
 
 perimetroCuadrado :: Number -> Number
-perimetroCuadrado lado = implementame
+perimetroCuadrado lado = 4 * lado
 
 superficieCuadrado :: Number -> Number
-superficieCuadrado lado = implementame
+superficieCuadrado lado = lado^2
 
 superficieCubo :: Number -> Number
-superficieCubo lado = implementame
+superficieCubo lado = 6 * (lado^2)
 
 superficieCilindro :: Number -> Number -> Number
-superficieCilindro radio altura = implementame
+superficieCilindro radio altura = (perimetroCirculo radio) * (altura + radio)

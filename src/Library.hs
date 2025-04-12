@@ -27,7 +27,7 @@ haceFrioCelsius gradosCelsius = gradosCelsius <= 8
 
 -- escriban el tipo de esta función
 haceFrioFahrenheit :: Number -> Bool
-haceFrioFahrenheit gradosFahrenheit = gradosFahrenheit <= celsiusAFahrenheit 8
+haceFrioFahrenheit gradosFahrenheit = haceFrioCelsius(fahrenheitACelsius gradosFahrenheit)
 
 -- 2.5 Bonus OPCIONAL
 perimetroCirculo :: Number -> Number
@@ -43,4 +43,4 @@ superficieCubo :: Number -> Number
 superficieCubo lado = 6 * (lado^2)
 
 superficieCilindro :: Number -> Number -> Number
-superficieCilindro radio altura = 2 * 3.14 * radio * (altura + radio)
+superficieCilindro radio altura = (perimetroCirculo radio) * (altura + radio)

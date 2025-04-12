@@ -62,11 +62,9 @@ suiteDeTestsDeParteII =
 
     describe "fahrenheitACelsius y celsiusAFahrenheit son inversas" $ do
       it "convertir un valor en celsius a fahrenheit y luego volver a convertir a celsius retorna el valor original" $ do
-        celsiusAFahrenheit 10 `shouldBeEqualUpTo2Decimals` 50
-        fahrenheitACelsius 50 `shouldBeEqualUpTo2Decimals` 10
+        celsiusAFahrenheit( fahrenheitACelsius 60) `shouldBeEqualUpTo2Decimals` 60
       it "convertir un valor en fahrenheit a celsius y luego volver a convertir a fahrenheit retorna el valor original" $ do
-        fahrenheitACelsius 68 `shouldBeEqualUpTo2Decimals` 20
-        celsiusAFahrenheit 20 `shouldBeEqualUpTo2Decimals` 68
+        fahrenheitACelsius( celsiusAFahrenheit 10) `shouldBeEqualUpTo2Decimals` 10
       
 
     describe "haceFrioCelsius" $ do
